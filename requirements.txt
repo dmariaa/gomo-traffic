@@ -1,0 +1,8 @@
+numpy
+pandas
+networkx
+shapely
+torch
+torch-geometric
+huggingface-hub
+python-dotenv
