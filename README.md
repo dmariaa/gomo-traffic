@@ -39,15 +39,13 @@ pip install -r requirements.txt
 
 The script `src/generate_largest_dataset.py` downloads GO-MO traffic data and
 the route-based graph from the Hugging Face dataset repository, filters sensors
-with incomplete coverage, normalizes traffic intensity, and writes model-ready
-NumPy artifacts to `output/`.
+with incomplete coverage, normalizes traffic intensity, and writes to `output/`
+the artifacts needed to run the validation experiments with the Largest Benchmark.
+The Largest Benchmark is part of
+[LargeST](https://github.com/liuxu77/LargeST); these generated files were used
+for the technical validation experiments of the GO-MO dataset.
 
-Before running it, install the project requirements and make `src/` importable:
-
-```powershell
-pip install -r requirements.txt
-$env:PYTHONPATH = ".\src"
-```
+Before running it, complete the installation/setup steps above.
 
 The Hugging Face dataset is public, so a token is not required. Setting
 `HF_API_TOKEN_GOMO` can still help with Hugging Face rate limits and faster
