@@ -1,6 +1,7 @@
 # GO-MO: A large-scale graph-augmented traffic dataset for data-driven spatio-temporal traffic analysis
 
-This repository contains utilities and transforms used with the GO-MO traffic dataset.
+This repository contains utilities and transforms used with the
+[GO-MO traffic dataset](https://doi.org/10.57967/hf/7201).
 
 It provides helpers to:
 - Convert a road network graph into a line graph suitable for routing/ML (`to_line_graph`).
@@ -38,9 +39,11 @@ pip install -r requirements.txt
 ## Generating the largest dataset
 
 The script `src/generate_largest_dataset.py` downloads GO-MO traffic data and
-the route-based graph from the Hugging Face dataset repository, filters sensors
-with incomplete coverage, normalizes traffic intensity, and writes to `output/`
-the artifacts needed to run the validation experiments with the Largest Benchmark.
+the route-based graph from the
+[Hugging Face dataset repository](https://huggingface.co/datasets/dmariaa70/GO-MO),
+filters sensors with incomplete coverage, normalizes traffic intensity, and
+writes to `output/` the artifacts needed to run the validation experiments with
+the Largest Benchmark.
 The Largest Benchmark is part of
 [LargeST](https://github.com/liuxu77/LargeST); these generated files were used
 for the technical validation experiments of the GO-MO dataset.
